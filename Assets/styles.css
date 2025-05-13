@@ -22,14 +22,13 @@ ul{
 }
 
 #hero{
-    position: relative;
     padding-top: 27px;
     background: linear-gradient(45deg, rgba(42, 64, 50, 1) 10%, rgba(58, 94, 70, 1));
-    height: 1000px;
 }
 
 #hero .hero-text{
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -41,6 +40,20 @@ h1{
     font-weight: 900;
     line-height: 50px;
     color: white;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: black;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: black;
 }
 
 #hero span{
@@ -58,16 +71,35 @@ h1{
     color: rgba(255, 255, 255, 0.8);
 }
 
+
 #hero .hero-images{
     position: relative;
-    z-index: 0;
+    bottom: 20px;
+    z-index: 1;
+    height: 391px;
+    width: 305.5px;
+    margin-left: auto;
+    margin-right: auto;
 }
+#hero .hero-images .hero-man{
+     position: absolute;
+     height: 391px;
+     left: 49.74px;
 
+}
 #hero .hero-images .ellipse-left{
+    z-index: -1;
     position: absolute;
-    bottom: 82.4px;
+    height: 192.63px;
+    top: 110.4px;
 }
-
+#hero .hero-images .ellipse-right{
+    position: absolute;
+    width: 192.63px;
+    top: 49.31px;
+    right: 0;
+    z-index: -1;
+}
 #mobile-nav{
     position: fixed;
     width: 100%;
@@ -92,11 +124,103 @@ h1{
     margin-top: 12px;
 }
 
+#brands ul{
+    background-color: black;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+#new-collections h2{
+    margin: 32px 129px 32px 15px;
+}
+
+#new-collections .new-collections-cards{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+#new-collections .new-collections-cards .new-collection-1{
+    position: relative;
+    width: 330px;
+    height: 410.9px;
+    border-radius: 24px;
+    background-color: rgba(197, 194, 202, 1);
+}
+
+#new-collections .new-collections-cards .new-collection-2{
+    position: relative;
+    width: 330px;
+    height: 246.49px;
+    border-radius: 24px;
+    background-color: rgba(253, 222, 103, 1);
+}
+
+#new-collections .new-collections-cards .new-collection-2 h3{
+    position: absolute;
+    top: 20.33px;
+    right: 18px;
+}
+
+#new-collections .new-collections-cards .new-collection-1 h3{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    text-align: center;
+}
+
+#new-collections .new-collections-cards .new-collection-1 img{
+    position: absolute;
+    bottom: 0;
+    left: 66.36px;
+}
+
+#new-collections .new-collections-cards .new-collection-2 img{
+    position: absolute;
+    bottom: 0;
+
+}
+
+#new-collections .new-collections-cards .new-collection-2 span{
+    position: absolute;
+    font-family: 'roboto';
+    font-size: 24px;
+    font-weight: 700;
+    top: 108.8px;
+    right: 40px;
+
+}
+
+#new-collections .new-collections-cards .new-collection-1 a, #new-collections .new-collections-cards .new-collection-2 a{
+    color: white;
+    background-color: black;
+    padding: 16px 40px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'lato';
+    z-index: 1;
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+
+} 
 
 
 
-@media (max-width>1000px){
+
+
+@media (min-width:1000px){
     body{
 
+    }
+
+    #mobile-nav-bar
+    {
+        display: none;
     }
 }
